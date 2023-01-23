@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #fdfdfd;
+    Font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+}
+.continer {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 100rem;
+    flex-wrap: wrap;
+   
+}
+.left-up,.right-up {
+width: 38%;
+}
+.rates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px
+}
+
+.rates p {
+    font-weight: 600;
+    color: #473548;
+    background-color: #f5f0fa;
+    width: 35rem;
+    height: 4rem;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rates p:nth-child(1) {
+    margin-left: 1rem;
+}
+
+.rates p:nth-child(2) {
+    margin-left: 6rem;
+}
+.rates p:nth-child(3) {
+    margin-left: 11rem;
+}
+.down {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    gap: 20px
+}
+.first, .scond, .third {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background: #501f4f;
+    color: white;
+    height: 14rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 25rem;
+}
+.scond {
+    margin-top: 1.5rem;
+}
+.third {
+    margin-top: 3rem;
+}
+img {
+    border-radius: 50%;
+}
+.user {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-left: -9rem;
+}
+.name {
+    align-self: center;
+}
+.titleus {
+    color: hsl(333, 80%, 67%);
+}
+.stars {
+    margin-right: 1rem;
+}
+.stars img {
+    width: 2rem;
+}
+.title {
+    width: 50%;
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #501f4f;
+}
+.left-up p {
+    width: 62%;
+}
+
+@media (max-width : 767px) {
+    body {
+        height: unset !important;
+    }
+    *{
+        width: auto !important;
+    }
+    .continer {
+        flex-direction: column;
+    }
+    .left-up {
+        margin-top: 2rem;
+    }
+    .title,.text {
+        text-align: center;
+    }
+    .rates {
+        margin-top: 1rem;
+    }
+    .rates p {
+        width: 21rem !important;
+        margin-left: 0 !important;
+    }
+    .down {
+        flex-direction: column !important;
+    }
+    .first, .scond, .third {
+        width: 22rem !important;
+    }
+    .user {
+        width: 66% !important;
+        margin-left: -8rem;
+    }
+
+}
